@@ -1,0 +1,25 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "nodejs study",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buobao/nodejs-study.git"
+  },
+  "keywords": [
+    "first"
+  ],
+  "author": "buobao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buobao/nodejs-study/issues"
+  },
+  "homepage": "https://github.com/buobao/nodejs-study#readme",
+  "dependencies": {
+    "underscore": "^1.9.0"
+  }
+}
