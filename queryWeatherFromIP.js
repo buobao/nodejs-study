@@ -20,7 +20,14 @@ function readIP(path, callback) {
 
 readIP('./ips.txt',function(err, data){
 	if (err) throw err;
-	console.log(data);
+	//console.log(data);
+	for (var i=0;i<data.length;i++) {
+		ip2geo(data[i], function(err, body){
+			if (err) throw err;
+			console.log(body);
+		});
+	}
+	
 });
 
 function ip2geo(ip, callback) {
@@ -29,7 +36,7 @@ function ip2geo(ip, callback) {
 	{
 		url:url,
 		json:true
-	},function(err, resp, boty){
+	},function(err, resp, body){
 		callback(err,body);
 	});
 }
