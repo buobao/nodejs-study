@@ -1,8 +1,11 @@
-var net = require("net");
-var server = net.createServer(function(socket){
-	console.log('someone connects');
+var net = require('net');
+
+var client = new net.Socket();
+
+client.connect(18001, '127.0.0.1', function(){
+	console.log('connect the server.');
 });
 
-server.listen(18001, function(){
-	console.log('server is listening');
-});
+client.on('data', function(data){
+	console.log(data.toString());
+})
