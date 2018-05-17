@@ -1,0 +1,17 @@
+//install
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/
+
+apt-get update
+apt-get install -y mongodb-org
+vim /etc/mongod.conf
+
+
+sudo service mongod start  # 启动
+sudo service mongod stop   # 关闭
+
+ps aux | grep mongod   # 查看守护进程mongod的运行状态
+
+apt-get purge mongodb-org*	
+
+rm -r /var/log/mongodb
+rm -r /var/lib/mongodb
