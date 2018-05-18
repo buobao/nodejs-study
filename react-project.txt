@@ -1,2 +1,12 @@
 npm install create-react-app -g
+npm config set registry "https://registry.npmjs.com/"
 create-react-app reactdemo --save
+
+
+//repositroies
+https://registry.npmjs.org/ (Dfault One)
+http://r.cnpmjs.org/
+https://registry.npm.taobao.org/
+https://registry.nodejitsu.com/
+http://registry.mirror.cqupt.edu.cn
+https://skimdb.npmjs.com/registry
